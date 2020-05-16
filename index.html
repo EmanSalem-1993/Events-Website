@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EVENTS BULIDER </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css fo/all.css">
+  <link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="js fo/all.js">  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="home">
+	   <nav class="navbar navbar-expand-lg navbar-sucess bg-light navbar1 fixed ">
+       <a class="navbar-brand logo" href="#">EVENTS <span id="logo1" > BULIDER</span></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse p-3" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto pl-5">
+          <li class="nav-item active">
+            <a class="nav-link" href="# home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#event">EVENTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#register" >Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BUY NOW</a>
+          </li>
+          </ul>   
+         <button type="button" class="btn  button">Submit Events<i class="fas fa-plus pl-1" id="plus"></i></button>
+        </div>
+      </nav>
+    <img src="img/event1.jpeg" class="event"> 
+  </div>
+  <div id="submitEvent">
+      <label class="p-1" >The titel :</label>
+      <input type="text" class="form-control titleInput" id="titleInput"  placeholder="the titel" onchange ="text()"  >
+      <label class="p-1" >The price of the ticket :</label>
+      <select class="form-control price inputPrice" id="inputPrice" onchange="price()">
+        <option>10</option>
+        <option>20</option>
+        <option>30</option>
+        <option>40</option>
+        <option>50</option>
+      </select>
+      <label class="p-1" >desecription of the event :</label>
+      <br>
+      <textarea  rows="3" class="textarea inputDescription" id="inputDescription" onchange="desecription()"></textarea>
+      <br>
+      <label class="p-1" >The Date</label>
+      <br>
+      <input type="date" name="date" class="inputDate" id="inputDate"      onchange="date()" >
+      <br>
+       <button class="submit bg-primary p-2 text-white mt-1 " onclick="appendText()">Submit</button>
+  </div>
+  <div id="event">
+  <div class="container">
+    <h1 class="text-center py-5">UPCOMING EVENTS</h1>
+    <div class="row">
+       <div class="card mb-3" >
+          <div class="row no-gutters">
+             <div class="col-md-4">
+               <img src="img/show.jpg" class="card-img img" alt="...">
+             </div>
+             <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title title">Live Shows</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Eitional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body">The Ticket price:10JD</small></p>
+                    <p class="card-text date">20/5/2020</p>
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    <div class="row">
+      <div class="card mb-3" >
+       <div class="row no-gutters">
+          <div class="col-md-4">
+           <img src="img/ramdan.jpg" class="card-img img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title title">Ramdan Events</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Eitional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body">The Ticket price:10JD</small></p>
+              <p class="card-text date">20/5/2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card mb-3" >
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="img/art1.jpg" class="card-img img" alt="...">
+          </div>
+          <div class="col-md-8">
+             <div class="card-body">
+                <h5 class="card-title title">Arts</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Eitional content. This content is a little bit longer</p>
+                <p class="card-text"><small class="text-body">The Ticket price:20JD</small></p>
+                <p class="card-text date">22/5/2020</p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+       <div class="card mb-3" >
+          <div class="row no-gutters">
+           <div class="col-md-4">
+             <img src="img/workshop.jpg" class="card-img img" alt="...">
+           </div>
+           <div class="col-md-8">
+              <div class="card-body"> 
+                <h5 class="card-title title">Workshops</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Eitional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body">The Ticket price:10JD</small></p>
+                <p class="card-text date">20/5/2020</p>
+              </div>
+           </div>
+         </div>
+      </div>
+    </div>
+  </div>
+ </div>  
+  <div id="register">
+    <div class="container-fluid bg-secondary p-3">
+      <div class="row m-5">
+        <div class="col-lg-6 col-sm-12 col-md-12">
+         <img src="img/event.jpg" class="img2">
+        </div>
+      <div class="col-lg-6 col-sm-12 col-md-12">
+    <div class="form-group p-2">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmailall" aria-describedby="emailHelp">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group p-2">
+      <label for="exampleInputPassword1 ">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group form-check p-2">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-success success p-2"  >Submit</button>
+  <div id="successDiv"></div>
+  </div>
+ </div>
+</div>
+</div>
+ <!--Start Footer!-->
+  <div class="container bg-white">
+    <div class="row mt-5 footer">
+      <div class="col-lg-3 col-sm-12 col-md-12 ">
+        <h4 class="text-body">Event Builder</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore  </p>
+      </div>
+      <div class="col-lg-3 col-sm-12 col-md-12 ">
+        <h5 class="text-body">Quick Link</h5>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 footer">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Articals</a>
+            <a href="">Pages</a>
+          </div>
+          <div class="col-lg-6 col-sm-12 col-md-12 inline footer">
+            <a href="">News</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+            <a href="">Privcy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-12 col-md-12 ">
+        <h5 class="text-body">Blog</h5>
+        <p class="my-0"><a href="" class="text-body">Consecter Adpising Elit</a></p>
+        <a href="" class="text-muted"><i class="far fa-calendar mr-2"></i><span>MAY 1,2020 <i class="fas fa-user-shield m-2"></i><span>Admin</span><i class="fas fa-cloud m-2"></i><span>19</p></a>
+        <p class="my-0"><a href="" class="text-body">Dolor Tempro Conse</a></p>
+        <a href="" class="text-muted"><i class="far fa-calendar mr-2"></i><span>MAY 1,2020 <i class="fas fa-user-shield m-2"></i><span>Admin</span><i class="fas fa-cloud m-2"></i><span>19</p></a>
+        <p class="my-0"><a href="" class="text-body">Perfriend eum illum</a></p>
+        <a href="" class="text-muted"><i class="far fa-calendar mr-2"></i><span>MAY 1,2020 <i class="fas fa-user-shield m-2"></i><span>Admin</span><i class="fas fa-cloud m-2"></i><span>19</p></a>
+      </div>
+      <div class="col-lg-3 col-sm-12 col-md-12 ">
+        <h5 class="text-body">Contact Information</h5>
+        <div class="row">
+          <div class="col-lg-3 col-sm-12 col-md-12">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="col-lg-9 col-sm-12 col-md-12">
+            <p>203 Fake St.Mountain Veiw, AMMAN, JORDAN</p>  
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="col-sm-9">
+            <a href="">+0775429021</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-12 col-md-12">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="col-lg-9 col-sm-12 col-md-12">
+            <a href="">info@jordanclinic.com</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-12 col-md-12">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="col-lg-9 col-sm-12 col-md-12">
+            <a href="" class="text-muted" >24 hours</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div><p class="mt-5 float-left"> Copyright &copy; 2020 All Right reserved| This templet is made with<i></i>by<a href="" class="d">Eman Alwlaidat</a></p>
+    </div>
+  </div>
+  <!--End Footer!-->       
+<script type="text/javascript" src="js/main2.js"></script>
+
+</body>
+</html>

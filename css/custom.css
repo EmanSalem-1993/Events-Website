@@ -1,0 +1,68 @@
+.event{
+	width:100%;
+	height: 600px;
+}
+.img{
+	height: 240px;
+	width:290px;
+}
+.button{
+	
+	color:white;
+	background-color: #cc3399;
+	font-size: 21px;
+
+}
+.navbar1{
+	background-color: grey;
+}
+
+.logo{
+	font-size: 25px;
+}
+.title{
+	color: #7a1f5c;
+}
+.textarea{
+	width:350px;
+	height: 150px;
+}
+#submitEvent{
+	width:580px;
+	height: 490px;
+	position: absolute;
+	margin-top: -500px;
+	margin-left:700px;
+	z-index: 2;
+	display: none;
+	background-color: white;
+	padding: 9px;
+	color: blue;
+	border:2px solid grey;
+	padding: 8px;
+}	
+.title1 ,.description1 ,.price1{
+	padding-left: 15px;
+}
+
+.div1 ,.div2 {
+	display: none;
+}
+.img2{
+	width: 400px;
+	height: 400px;
+	transform: rotate(10deg);
+	text-shadow: 10px red;
+}
+#successDiv{
+	color: green;
+	font-size: 23px;
+	
+	padding: 5px;
+	margin-top: 8px;
+}
+
+
+		
+		
+		
